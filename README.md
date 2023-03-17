@@ -1,38 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tienda web de muebles estilo industrial diseñado por MidJourney:writing_hand:
 
-## Getting Started
+Este proyecto fue creado basándose en un diseño creado por MidJourney.
 
-First, run the development server:
+## Entorno
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Asegurarse de tener instalado `git` . Esto se puede revisar muy fácilmente a través del comando `git --version` . En caso de no estar instalado, se puede hacer a través de los siguientes paso
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- En linux, a travez del comando `sudo apt install git`.
+- En Windows, a travez de la pagina oficial https://git-scm.com/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Procurar tener actualizado `node.js` a la versión `lts`. Si desea asegurarse, puede ejecutar el comando `npm doctor` que le indicara si cumple con los requisitos. Si el comando no se encuentra o `node.js` esta desactualizado, puede instalar `node.js --lts` mediante alguno de los siguientes pasos
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- En windows, desde la [pagina oficial](https://nodejs.org/en/), descargando y ejecutando la versión `lts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- En Linux, a través de [nvm](https://github.com/nvm-sh/nvm)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - Abrir una terminal y ejecutar el comando que se encuentra en la sección [Install & update script](https://github.com/nvm-sh/nvm#install--update-script)
 
-## Learn More
+  - Cerrar la terminal y abrir otra para ejecutar el siguiente comando para verificar la correcta instalación`nvm --version` . Una vez observada la versión, ejecutar el siguiente comando para instalar Node.js
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    nvm install --lts
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalación y ejecución
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 🛠Para instalar las dependencias ejecutar el siguiente comando `npm install`
+- ⚒Para ejecutar el modo playground o repl, ejecutar el siguiente comando `npm run dev`
+- 🔧Para traducir el código en `/src` a `JavaScript` , usar el comando `npm run build`
+- 🔑Para ejecutar el código con `Node.js`, usar el comando `npm run start`
 
-## Deploy on Vercel
+## Tecnologías usadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [TypeScript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [Jest](https://jestjs.io/)
+- [Material UI](https://mui.com/core/)
+- [MidJourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
